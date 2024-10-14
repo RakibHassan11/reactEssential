@@ -1,10 +1,13 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
+  "homepage": "https://rakibhassan11.github.io/reactEssential",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -12,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^6.2.0",
     "vite": "^4.5.3"
   },
   "keywords": [],
